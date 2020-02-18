@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
-import PostsPage from "./PostsPage";
 
 import "./Posts.css";
 
@@ -26,7 +25,6 @@ const Post = props => {
         />
       </div>
       <LikeSection addLikes={addLikes} likes={likes} setLikes={setLikes} />
-      <PostsPage />
       <CommentSection postId={props.post.imageUrl} comments={props.post.comments}/>
     </div>
   );
